@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.Setting">
+   <children>
+      <Label layoutX="197.0" layoutY="31.0" prefHeight="54.0" prefWidth="206.0" text="setting page" textAlignment="CENTER">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Label>
+      <Label layoutX="58.0" layoutY="115.0" prefHeight="22.0" prefWidth="62.0" text="username" />
+      <Label fx:id="username" layoutX="217.0" layoutY="118.0" text="Label" />
+      <Label layoutX="68.0" layoutY="169.0" text="bio" />
+      <Label fx:id="bio" layoutX="217.0" layoutY="169.0" text="Label" />
+      <ImageView fx:id="im" fitHeight="96.0" fitWidth="138.0" layoutX="365.0" layoutY="104.0" onDragDropped="#drop" onDragOver="#dragOver" pickOnBounds="true" preserveRatio="true" />
+      <Button layoutX="106.0" layoutY="246.0" mnemonicParsing="false" onAction="#setBio" text="set bio" />
+      <Button layoutX="245.0" layoutY="246.0" mnemonicParsing="false" onAction="#changePassword" text="changePassword" />
+   </children>
+</AnchorPane>

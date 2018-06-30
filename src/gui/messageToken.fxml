@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<fx:root type="HBox" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="59.0" prefWidth="234.0">
+         <children>
+            <Label fx:id="message" prefHeight="50.0" prefWidth="234.0" text="message">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></Label>
+            <HBox>
+               <children>
+                  <Label fx:id="sentTime" prefHeight="22.0" prefWidth="234.0" text="sent time" textAlignment="RIGHT" />
+                  <CheckBox fx:id="sentCheck" disable="true" mnemonicParsing="false" />
+                  <CheckBox fx:id="readCheck" disable="true" mnemonicParsing="false" prefHeight="18.0" prefWidth="3.0" />
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets left="10.0" />
+         </padding>
+      </VBox>
+   </children>
+</fx:root>

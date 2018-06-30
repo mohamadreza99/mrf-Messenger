@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+
+
+<fx:root type="VBox" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="225.0">
+         <children>
+            <ImageView fitHeight="50.0" fitWidth="63.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@002-user-1.png" />
+               </image>
+            </ImageView>
+            <VBox prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 50;">
+               <children>
+                  <HBox prefHeight="47.0" prefWidth="151.0">
+                     <children>
+                        <Label prefHeight="32.0" prefWidth="122.0" text="username" />
+                        <ImageView fitHeight="17.0" fitWidth="20.0">
+                           <image>
+                              <Image url="@more.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </HBox>
+                  <Label opacity="0.66" prefHeight="25.0" prefWidth="166.0" text="last message">
+                     <padding>
+                        <Insets left="15.0" />
+                     </padding>
+                  </Label>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+            </VBox>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <Line endX="100.0" startX="-100.0" strokeWidth="2.0">
+         <stroke>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop color="#363d45" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </stroke>
+      </Line>
+   </children>
+</fx:root>
